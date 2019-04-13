@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1555176768 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
+	"Harta.h"
+
+1555176768 c:\users\bianca\documents\github\robot\robot1\harta.h
+
+1555176768 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
+	<iostream>
+
+1555176818 source:c:\users\bianca\documents\github\robot\robot1\iteme.cpp
+	"Iteme.h"
+
+1555176811 c:\users\bianca\documents\github\robot\robot1\iteme.h
+
