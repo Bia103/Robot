@@ -15,7 +15,34 @@ Harta::Harta()
     {
         int xh=rand()%15;
         int yh=rand()%15;
-        a[xh][yh]='C';
+        if(xh!=13&&yh!=13)
+            a[xh][yh]='C';
+    }
+
+    for(int i=0;i<15;i++)
+    {
+        int ok1=0,ok2=0;
+        for(int j=0;j<15;j++)
+        {
+            if(a[i][j]=='0')
+                ok1=1;
+            if(a[j][i]=='0')
+                ok2=1;
+        }
+        if(!ok1)
+        {
+            a[i][8]='0';
+        }
+        if(!ok2)
+        {
+            a[8][i]=0;
+            int x=i,y=8;
+            while(a[y][x+1]!='0'&&a[y-1][x+1]!='0'&&a[y-1][x+1]!='0')
+            {
+                a[y][x+1]='0';
+                x++;
+            }
+        }
     }
     n=rand()%50;
     for(int i=0;i<n;i++)

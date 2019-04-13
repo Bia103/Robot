@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1555179070 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
+1555192003 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
 	"Harta.h"
 	<random>
 	<iostream>
@@ -21,4 +21,10 @@
 	"Roboti.h"
 
 1555176811 c:\users\bianca\documents\github\robot\robot1\roboti.h
+
+1555184220 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
+	"Robot_Tip_1.h"
+
+1555184439 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
+	"Roboti.h"
 
