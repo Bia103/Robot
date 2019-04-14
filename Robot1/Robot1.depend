@@ -29,7 +29,15 @@
 	<cmath>
 	<iostream>
 
-1555257706 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
+1555274240 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
 	"Roboti.h"
 	"Harta.h"
+
+1555274610 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
+	"Robot_tip_2.h"
+	"Harta.h"
+	"Roboti.h"
+
+1555274610 c:\users\bianca\documents\github\robot\robot1\robot_tip_2.h
+	"Roboti.h"
 

@@ -5,7 +5,7 @@
 class Robot_Tip_1:public Roboti
 {
     //robotul ce poate anihila cea mai apropiata capcana
-    int tip=1;
+
     public:
         Robot_Tip_1();
         Robot_Tip_1(int);
