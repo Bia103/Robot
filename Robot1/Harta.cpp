@@ -15,7 +15,7 @@ Harta::Harta()
     {
         int xh=rand()%15;
         int yh=rand()%15;
-        if(xh!=13&&yh!=13)
+        if(xh!=14&&yh!=13&&yh!=0)
             a[xh][yh]='C';
     }
 
@@ -35,7 +35,7 @@ Harta::Harta()
         }
         if(!ok2)
         {
-            a[8][i]=0;
+            a[8][i]='0';
             int x=i,y=8;
             while(a[y][x+1]!='0'&&a[y-1][x+1]!='0'&&a[y-1][x+1]!='0')
             {
@@ -82,4 +82,12 @@ Harta::Arata_Harta_Cu_Robot(int x,int y)
     for(int i=0;i<=16;i++)
         cout<<"X ";
     cout<<endl;
+}
+Harta::Modifica_Harta(int x,int y)
+{
+    a[x][y]='0';
+}
+char Harta::Pozitia_x_y(int x,int y)
+{
+    return a[x][y];
 }

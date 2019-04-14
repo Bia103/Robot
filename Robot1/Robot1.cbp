@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Harta.cpp" />
+		<Unit filename="Harta.h" />
+		<Unit filename="Iteme.cpp" />
+		<Unit filename="Iteme.h" />
+		<Unit filename="Robot_Tip_1.cpp" />
+		<Unit filename="Robot_Tip_1.h" />
+		<Unit filename="Roboti.cpp" />
+		<Unit filename="Roboti.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
