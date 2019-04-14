@@ -53,6 +53,19 @@ Harta::Harta()
     }
     n=rand()%15;
     a[n][14]='S';
+    xh=n;
+    yh=14;
+}
+Harta::Harta(const Harta &b)
+{
+    a=new char*[15];
+    for(int i = 0; i < 15; ++i)
+        a[i] = new char[15];
+    for(int i=0;i<15;i++)
+        for(int j=0;j<15;j++)
+            a[i][j]=b.a[i][j];
+    xh=b.xh;
+    yh=b.yh;
 }
 Harta::Arata_Harta()
 {
@@ -90,4 +103,25 @@ Harta::Modifica_Harta(int x,int y)
 char Harta::Pozitia_x_y(int x,int y)
 {
     return a[x][y];
+}
+int Harta::Coord_xh()
+{
+    return xh;
+}
+Harta Harta:: operator=(const Harta &op2)
+{
+    char **u=new char*[15];
+    for(int i = 0; i < 15; ++i)
+        u[i] = new char[15];
+     for(int i = 0; i < 5; ++i) {
+        delete[] a[i];
+    }
+    delete[] a;
+    for(int i=0;i<15;i++)
+        for(int j=0;j<15;j++)
+            u[i][j]=op2.a[i][j];
+    a=u;
+    xh=op2.xh;
+    yh=op2.yh;
+    return *this;
 }

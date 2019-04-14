@@ -2,14 +2,27 @@
 #include "Harta.h"
 #include "Roboti.h"
 #include "Iteme.h"
+#include "Robot_Tip_1.h"
 using namespace std;
 
 int main()
 {
-    Harta h;
+    Harta h,b;
+    int mi=INT_MAX;
     h.Arata_Harta();
+    Harta o(b);
    // h.Modifica_Harta(0,5);
+    o.Arata_Harta_Cu_Robot(0,0);
+    h=b;
     h.Arata_Harta_Cu_Robot(0,0);
     cout<<endl<<h.Pozitia_x_y(0,5);
+    /*Roboti r;
+    cout<<r.Coordonata_x()<<" "<<r.Coordonata_y();*/
+    Robot_Tip_1 r1(1);
+    cout<<endl<<r1.Coordonata_x()<<" "<<r1.Coordonata_y()<<" "<<r1.Tip();
+    //cout<<"xh= "<<
+    h=r1.Abilitate(h);
+    cout<<endl;
+     h.Arata_Harta_Cu_Robot(0,0);
     return 0;
 }
