@@ -1,6 +1,6 @@
 #ifndef ROBOTI_H
 #define ROBOTI_H
-
+#include"Harta.h"
 
 class Roboti
 {
@@ -11,7 +11,7 @@ class Roboti
         virtual int Coordonata_x();
         virtual int Coordonata_y();
         virtual int Tip();
-        virtual void Abilitate();
+        virtual Harta Abilitate(const Harta &);
         void Muta_Robotul(int,int);
 
 };

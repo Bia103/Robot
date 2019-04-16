@@ -38,6 +38,8 @@
 		<Unit filename="Iteme.h" />
 		<Unit filename="Robot_Tip_1.cpp" />
 		<Unit filename="Robot_Tip_1.h" />
+		<Unit filename="Robot_tip_2.cpp" />
+		<Unit filename="Robot_tip_2.h" />
 		<Unit filename="Roboti.cpp" />
 		<Unit filename="Roboti.h" />
 		<Unit filename="main.cpp" />

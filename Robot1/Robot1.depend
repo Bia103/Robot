@@ -6,7 +6,7 @@
 
 1555258038 c:\users\bianca\documents\github\robot\robot1\harta.h
 
-1555260685 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
+1555413685 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
 	<iostream>
 	"Harta.h"
 	"Roboti.h"
@@ -18,26 +18,28 @@
 
 1555176811 c:\users\bianca\documents\github\robot\robot1\iteme.h
 
-1555273653 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
+1555413681 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
 	"Roboti.h"
 
-1555273754 c:\users\bianca\documents\github\robot\robot1\roboti.h
+1555413624 c:\users\bianca\documents\github\robot\robot1\roboti.h
+	"Harta.h"
 
-1555260870 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
+1555413624 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
 	"Robot_Tip_1.h"
 	"Harta.h"
 	<cmath>
 	<iostream>
 
-1555274240 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
+1555413624 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
 	"Roboti.h"
 	"Harta.h"
 
-1555274610 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
+1555418146 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
 	"Robot_tip_2.h"
 	"Harta.h"
 	"Roboti.h"
 
-1555274610 c:\users\bianca\documents\github\robot\robot1\robot_tip_2.h
+1555418146 c:\users\bianca\documents\github\robot\robot1\robot_tip_2.h
 	"Roboti.h"
+	"Harta.h"
 
