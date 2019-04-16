@@ -4,12 +4,11 @@
 
 class Robot_Tip_3:public Roboti
 {
+    //robotul ce se teleporteaza cat mai aproape de final
     public:
         Robot_Tip_3();
+        Robot_Tip_3(int);
 
-    protected:
-
-    private:
 };
 
 #endif // ROBOT_TIP_3_H

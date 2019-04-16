@@ -55,6 +55,7 @@ Harta::Harta()
     a[n][14]='S';
     xh=n;
     yh=14;
+    //a[1][1]='C';
 }
 Harta::Harta(const Harta &b)
 {
@@ -88,6 +89,8 @@ Harta::Arata_Harta_Cu_Robot(int x,int y)
         for(int j=0;j<15;j++)
             if(i==x&&y==j)
                 cout<<"R ";
+            else if(a[i][j]=='0')
+                cout<<"  ";
             else cout<<a[i][j]<<" ";
         cout<<"X ";
         cout<<endl;

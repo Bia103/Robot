@@ -1,17 +1,18 @@
 # depslib dependency file v1.0
-1555260685 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
+1555418863 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
 	"Harta.h"
 	<random>
 	<iostream>
 
 1555258038 c:\users\bianca\documents\github\robot\robot1\harta.h
 
-1555413685 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
+1555418777 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
 	<iostream>
 	"Harta.h"
 	"Roboti.h"
 	"Iteme.h"
 	"Robot_Tip_1.h"
+	"Robot_tip_2.h"
 
 1555176818 source:c:\users\bianca\documents\github\robot\robot1\iteme.cpp
 	"Iteme.h"
@@ -34,7 +35,7 @@
 	"Roboti.h"
 	"Harta.h"
 
-1555418146 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
+1555418863 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
 	"Robot_tip_2.h"
 	"Harta.h"
 	"Roboti.h"
@@ -42,4 +43,11 @@
 1555418146 c:\users\bianca\documents\github\robot\robot1\robot_tip_2.h
 	"Roboti.h"
 	"Harta.h"
+
+1555423122 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_3.cpp
+	"Robot_Tip_3.h"
+	"Roboti.h"
+
+1555423437 c:\users\bianca\documents\github\robot\robot1\robot_tip_3.h
+	"Roboti.h"
 
