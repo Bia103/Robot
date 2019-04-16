@@ -24,22 +24,55 @@ Harta Robot_tip_2::Abilitate(const Harta &h)
     int x=Coordonata_x();
     int y=Coordonata_y();
     int xh=t.Coord_xh();
-    if(x==xh&&am_itemul&&t.Pozitia_x_y(x,y+1)=='C'&&t.Pozitia_x_y(x,y+2))
+    int yh=t.Coord_yh();
+    if(x==xh &&y<yh&&am_itemul&&t.Pozitia_x_y(x,y+1)=='C'&&(t.Pozitia_x_y(x,y+2)||t.Pozitia_x_y(x,y+2)=='S'))
     {
         am_itemul=0;
         Muta_Robotul(x,y+2);
         //return;
     }
-    if(x<xh&&am_itemul&&t.Pozitia_x_y(x+1,y+1)=='C'&&t.Pozitia_x_y(x+2,y+2)=='0')
+    if(x<xh&&y<yh&&am_itemul&&t.Pozitia_x_y(x+1,y+1)=='C'&&(t.Pozitia_x_y(x+2,y+2)=='0'||t.Pozitia_x_y(x+2,y+2)=='S'))
     {
         am_itemul=0;
         Muta_Robotul(x+2,y+2);
         //return;
     }
-    if(x>xh&&am_itemul&&t.Pozitia_x_y(x-1,y-1)=='C'&&t.Pozitia_x_y(x-2,y-2)=='0')
+    if(x>xh&&y<yh&&am_itemul&&t.Pozitia_x_y(x-1,y+1)=='C'&&(t.Pozitia_x_y(x-2,y+2)=='0'||t.Pozitia_x_y(x-2,y+2)=='S'))
     {
         am_itemul=0;
-        Muta_Robotul(x+2,y+2);
+        Muta_Robotul(x-2,y+2);
+        //return;
+    }
+    if(x>xh&&y==yh&&am_itemul&&t.Pozitia_x_y(x-1,y)=='C'&&(t.Pozitia_x_y(x-2,y)=='0'||t.Pozitia_x_y(x-2,y)=='S'))
+    {
+        am_itemul=0;
+        Muta_Robotul(x-2,y);
+        //return;
+    }
+
+    if(x<xh && y==yh && am_itemul && t.Pozitia_x_y(x+1,y)=='C' && (t.Pozitia_x_y(x+2,y)=='0' || t.Pozitia_x_y(x+2,y) == 'S'))
+    {
+        am_itemul=0;
+        Muta_Robotul(x-2,y);
+        //return;
+    }
+    /**********/
+    if(x==xh &&y>yh&&am_itemul&&t.Pozitia_x_y(x,y-1)=='C'&&(t.Pozitia_x_y(x,y-2)||t.Pozitia_x_y(x,y-2)=='S'))
+    {
+        am_itemul=0;
+        Muta_Robotul(x,y-2);
+        //return;
+    }
+    if(x<xh&&y>yh&&am_itemul&&t.Pozitia_x_y(x+1,y-1)=='C'&&(t.Pozitia_x_y(x+2,y-2)=='0'||t.Pozitia_x_y(x+2,y-2)=='S'))
+    {
+        am_itemul=0;
+        Muta_Robotul(x+2,y-2);
+        //return;
+    }
+    if(x>xh&&y>yh&&am_itemul&&t.Pozitia_x_y(x-1,y-1)=='C'&&(t.Pozitia_x_y(x-2,y-2)=='0'||t.Pozitia_x_y(x-2,y-2)=='S'))
+    {
+        am_itemul=0;
+        Muta_Robotul(x-2,y-2);
         //return;
     }
     return t;

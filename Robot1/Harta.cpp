@@ -7,7 +7,7 @@ Harta::Harta()
     a=new char*[15];
     for(int i = 0; i < 15; ++i)
         a[i] = new char[15];
-    int n=rand()%110;
+    int n=rand()%120;
     for(int i=0;i<15;i++)
         for(int j=0;j<15;j++)
             a[i][j]='0';
@@ -44,17 +44,19 @@ Harta::Harta()
             }
         }
     }
-    n=rand()%50;
+    n=rand()%60+1;
     for(int i=0;i<n;i++)
     {
         int xh=rand()%15;
         int yh=rand()%15;
         a[xh][yh]='I';
     }
-    n=rand()%15;
-    a[n][14]='S';
+    n=rand()%3+10;
+    int z=rand()%3+10;
+    cout<<n<<" "<<z<<" "<<endl;
+    a[n][z]='S';
     xh=n;
-    yh=14;
+    yh=z;
     //a[1][1]='C';
 }
 Harta::Harta(const Harta &b)
@@ -89,8 +91,8 @@ Harta::Arata_Harta_Cu_Robot(int x,int y)
         for(int j=0;j<15;j++)
             if(i==x&&y==j)
                 cout<<"R ";
-            else if(a[i][j]=='0')
-                cout<<"  ";
+            //else if(a[i][j]=='0')
+            //    cout<<"  ";
             else cout<<a[i][j]<<" ";
         cout<<"X ";
         cout<<endl;
@@ -110,6 +112,10 @@ char Harta::Pozitia_x_y(int x,int y)
 int Harta::Coord_xh()
 {
     return xh;
+}
+int Harta::Coord_yh()
+{
+    return yh;
 }
 Harta Harta:: operator=(const Harta &op2)
 {

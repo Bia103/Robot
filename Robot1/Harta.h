@@ -14,6 +14,7 @@ class Harta
         Modifica_Harta(int,int);
         char Pozitia_x_y(int,int);
         int Coord_xh();
+        int Coord_yh();
         Harta operator =(const Harta& op2);
         //char Pozitia_x_y(int,int);
 };
