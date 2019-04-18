@@ -1,6 +1,8 @@
 #include "Robot_tip_2.h"
 #include"Harta.h"
 #include"Roboti.h"
+#include<iostream>
+using namespace std;
 Robot_tip_2::Robot_tip_2():Roboti()
 {
     am_itemul=0;
@@ -21,6 +23,7 @@ void Robot_tip_2::Item()
 Harta Robot_tip_2::Abilitate(const Harta &h)
 {
     Harta t(h);
+//am_itemul=1;
     int x=Coordonata_x();
     int y=Coordonata_y();
     int xh=t.Coord_xh();
@@ -33,7 +36,7 @@ Harta Robot_tip_2::Abilitate(const Harta &h)
     }
     if(x<xh&&y<yh&&am_itemul&&t.Pozitia_x_y(x+1,y+1)=='C'&&(t.Pozitia_x_y(x+2,y+2)=='0'||t.Pozitia_x_y(x+2,y+2)=='S'))
     {
-        am_itemul=0;
+        am_itemul=0; //cout<<"Dapz";
         Muta_Robotul(x+2,y+2);
         //return;
     }

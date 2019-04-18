@@ -4,6 +4,7 @@
 #include "Iteme.h"
 #include "Robot_Tip_1.h"
 #include "Robot_tip_2.h"
+#include "Robot_Tip_3.h"
 using namespace std;
 
 int main()
@@ -27,5 +28,13 @@ int main()
     cout<<endl;
     h=r.Abilitate(h);
      h.Arata_Harta_Cu_Robot(r.Coordonata_x(),r.Coordonata_y());
+     Robot_Tip_3 r3(3);
+     r3.Abilitate(h);//cout<<"Wut";
+     h.Arata_Harta_Cu_Robot(r3.Coordonata_x(),r3.Coordonata_y());
+    Robot_tip_2 r2(2);
+
+    r2.Abilitate(h);
+    cout<<endl;
+    h.Arata_Harta_Cu_Robot(r2.Coordonata_x(),r2.Coordonata_y());
     return 0;
 }

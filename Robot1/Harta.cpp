@@ -57,7 +57,7 @@ Harta::Harta()
     a[n][z]='S';
     xh=n;
     yh=z;
-    //a[1][1]='C';
+    a[1][1]='C';
 }
 Harta::Harta(const Harta &b)
 {

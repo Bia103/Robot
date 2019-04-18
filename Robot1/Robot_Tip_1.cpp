@@ -13,9 +13,10 @@ Robot_Tip_1::Robot_Tip_1(int x):Roboti(x)
 }
 Harta Robot_Tip_1::Abilitate(const Harta &h)
 {
-    int u=0,p=0,mi=INT_MAX,xh;
+    int u=0,p=0,mix=INT_MAX,xh,miy=INT_MAX;
     Harta t(h);cout<<"ce?"<<endl;
     xh=t.Coord_xh();
+    int yh=Coordonata_y();
     int x=Coordonata_x();
     int y=Coordonata_y();
     //cout<<"x="<<x<<" y="<<y<<endl;
@@ -28,13 +29,16 @@ Harta Robot_Tip_1::Abilitate(const Harta &h)
                     char c=t.Pozitia_x_y(i,j);
                     //cout<<c;
                     if(c=='C')
-                    { int cont =xh-i;
-                        if(cont<0)
-                            cont =0-cont;
-                        cout<<cont<<" ";
-                        if(cont<mi&&j>=p)
+                    { int cont1 =xh-i;
+                    int cont2=y-j;
+                        if(cont1<0)
+                            cont1 =0-cont1;
+                        if(cont2<0)
+                            cont2 =0-cont2;
+//                        cout<<cont<<" ";
+                        if(cont1+cont2<=mix)
                         {
-                            mi=cont;
+                            mix=cont1+cont2;
                             u=i;
                             p=j;
                              //cout<<u<<" "<<p<<endl;
