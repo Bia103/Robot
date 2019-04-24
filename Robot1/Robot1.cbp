@@ -44,6 +44,8 @@
 		<Unit filename="Robot_tip_2.h" />
 		<Unit filename="Roboti.cpp" />
 		<Unit filename="Roboti.h" />
+		<Unit filename="Simulare.cpp" />
+		<Unit filename="Simulare.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

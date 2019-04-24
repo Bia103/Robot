@@ -9,7 +9,7 @@ class Robot_Tip_1:public Roboti
     public:
         Robot_Tip_1();
         Robot_Tip_1(int);
-        Harta Abilitate(const Harta &);
+        Harta Abilitate(const Harta &,int,int);
 
 
 };

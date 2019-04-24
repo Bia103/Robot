@@ -24,7 +24,7 @@ int Roboti::Tip()
 {
     return tip;
 }
-Harta Roboti::Abilitate(const Harta &h)
+Harta Roboti::Abilitate(const Harta &h,int xh,int yh)
 {
     return h;
 }
@@ -32,4 +32,16 @@ void Roboti::Muta_Robotul(int x,int y)
 {
     this->y=y;
     this->x=x;
+}
+void Roboti::Modifica_Tip(int t)
+{
+    tip=t;
+}
+int Roboti::Am_itemul()
+{
+    return am_itemul;
+}
+void Roboti::Item(int x)
+{
+    am_itemul=am_itemul-x;
 }

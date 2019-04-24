@@ -5,78 +5,87 @@
 using namespace std;
 Robot_tip_2::Robot_tip_2():Roboti()
 {
-    am_itemul=0;
+
 }
 
 Robot_tip_2::Robot_tip_2(int x):Roboti(x)
 {
-    am_itemul=0;
+
 }
-int Robot_tip_2::Am_itemul()
-{
-    return am_itemul;
-}
-void Robot_tip_2::Item()
-{
-    am_itemul=1;
-}
-Harta Robot_tip_2::Abilitate(const Harta &h)
+
+Harta Robot_tip_2::Abilitate(const Harta &h,int xh,int yh)
 {
     Harta t(h);
+
 //am_itemul=1;
+
     int x=Coordonata_x();
     int y=Coordonata_y();
-    int xh=t.Coord_xh();
-    int yh=t.Coord_yh();
-    if(x==xh &&y<yh&&am_itemul&&t.Pozitia_x_y(x,y+1)=='C'&&(t.Pozitia_x_y(x,y+2)||t.Pozitia_x_y(x,y+2)=='S'))
+    int q=t.Q();
+    int w=t.W();
+    //cout<<"x="<<x<<" y="<<y<<endl;;
+   // cout<<"hxh="<<xh<<" hyh="<<yh<<endl;;
+    //int xh=t.Coord_xh();
+    // int yh=t.Coord_yh();
+    if(x==xh && y<yh && Am_itemul() && t.Pozitia_x_y(x,y+1)=='C' && (t.Pozitia_x_y(x,y+2) == '0' || t.Pozitia_x_y(x,y+2) =='S' || t.Pozitia_x_y(x,y+2) =='I') && y+2<w)
     {
-        am_itemul=0;
+
         Muta_Robotul(x,y+2);
+         Item(-1);
         //return;
     }
-    if(x<xh&&y<yh&&am_itemul&&t.Pozitia_x_y(x+1,y+1)=='C'&&(t.Pozitia_x_y(x+2,y+2)=='0'||t.Pozitia_x_y(x+2,y+2)=='S'))
+    if(x<xh&&y<yh&&Am_itemul()&&t.Pozitia_x_y(x+1,y+1)=='C'&&(t.Pozitia_x_y(x+2,y+2)=='0'||t.Pozitia_x_y(x+2,y+2)=='S'|| t.Pozitia_x_y(x+2,y+2) =='I')&& y+2<w&& x+2<q)
     {
-        am_itemul=0; //cout<<"Dapz";
+        //cout<<"Dapz";
         Muta_Robotul(x+2,y+2);
+         Item(-1);
         //return;
     }
-    if(x>xh&&y<yh&&am_itemul&&t.Pozitia_x_y(x-1,y+1)=='C'&&(t.Pozitia_x_y(x-2,y+2)=='0'||t.Pozitia_x_y(x-2,y+2)=='S'))
+    if(x>xh&&y<yh&&Am_itemul()&&t.Pozitia_x_y(x-1,y+1)=='C'&&(t.Pozitia_x_y(x-2,y+2)=='0'||t.Pozitia_x_y(x-2,y+2)=='S'|| t.Pozitia_x_y(x-2,y+2) =='I') && y+2 < w& & x-2 >= 0)
     {
-        am_itemul=0;
+
         Muta_Robotul(x-2,y+2);
+         Item(-1);
         //return;
     }
-    if(x>xh&&y==yh&&am_itemul&&t.Pozitia_x_y(x-1,y)=='C'&&(t.Pozitia_x_y(x-2,y)=='0'||t.Pozitia_x_y(x-2,y)=='S'))
+    if(x>xh&&y==yh&&Am_itemul()&&t.Pozitia_x_y(x-1,y)=='C'&&(t.Pozitia_x_y(x-2,y) == '0' || t.Pozitia_x_y(x-2,y)=='S'|| t.Pozitia_x_y(x-2,y) =='I')&& x-2>=0)
     {
-        am_itemul=0;
+
         Muta_Robotul(x-2,y);
+         Item(-1);
         //return;
     }
 
-    if(x<xh && y==yh && am_itemul && t.Pozitia_x_y(x+1,y)=='C' && (t.Pozitia_x_y(x+2,y)=='0' || t.Pozitia_x_y(x+2,y) == 'S'))
+    if(x<xh && y==yh && Am_itemul() && t.Pozitia_x_y(x+1,y)=='C' && (t.Pozitia_x_y(x+2,y)=='0' || t.Pozitia_x_y(x+2,y) == 'S'|| t.Pozitia_x_y(x+2,y) =='I')&& x+2<q)
     {
-        am_itemul=0;
-        Muta_Robotul(x-2,y);
+
+        Muta_Robotul(x+2,y);
+        Item(-1);
         //return;
     }
     /**********/
-    if(x==xh &&y>yh&&am_itemul&&t.Pozitia_x_y(x,y-1)=='C'&&(t.Pozitia_x_y(x,y-2)||t.Pozitia_x_y(x,y-2)=='S'))
+    if(x==xh &&y>yh&&Am_itemul() &&t.Pozitia_x_y(x,y-1)=='C'&&(t.Pozitia_x_y(x,y-2)||t.Pozitia_x_y(x,y-2)=='S'|| t.Pozitia_x_y(x,y-2) =='I') && y-2>=0)
     {
-        am_itemul=0;
+
         Muta_Robotul(x,y-2);
+        Item(-1);
         //return;
     }
-    if(x<xh&&y>yh&&am_itemul&&t.Pozitia_x_y(x+1,y-1)=='C'&&(t.Pozitia_x_y(x+2,y-2)=='0'||t.Pozitia_x_y(x+2,y-2)=='S'))
+    if(x<xh&&y>yh&&Am_itemul() &&t.Pozitia_x_y(x+1,y-1)=='C'&&(t.Pozitia_x_y(x+2,y-2)=='0'||t.Pozitia_x_y(x+2,y-2)=='S'|| t.Pozitia_x_y(x+2,y-2) =='I') && x+2<q && y-2>=0)
     {
-        am_itemul=0;
+
         Muta_Robotul(x+2,y-2);
+        Item(-1);
         //return;
     }
-    if(x>xh&&y>yh&&am_itemul&&t.Pozitia_x_y(x-1,y-1)=='C'&&(t.Pozitia_x_y(x-2,y-2)=='0'||t.Pozitia_x_y(x-2,y-2)=='S'))
+    if(x>xh&&y>yh&&Am_itemul() &&t.Pozitia_x_y(x-1,y-1)=='C'&&(t.Pozitia_x_y(x-2,y-2)=='0'||t.Pozitia_x_y(x-2,y-2)=='S'|| t.Pozitia_x_y(x-2,y-2) =='I') && y-2>=0 && x-2>=0)
     {
-        am_itemul=0;
+
         Muta_Robotul(x-2,y-2);
+        Item(-1);
         //return;
     }
+    //cout<<"Experiment"<<x<<" "<<y<<endl; Muta_Robotul(12,12);
+    // Item(-1);
     return t;
 }
