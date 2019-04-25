@@ -41,9 +41,16 @@ Harta Robot_Tip_3::Abilitate(const Harta&h,int xh,int yh)
             }
         }
     }
-    Muta_Robotul(u,p);//cout<<" magieee";
-    // cout<<u<<" "<<p<<endl;
-    //cout<<"u="<<u<<" p="<<p<<endl;;
+    Muta_Robotul(u,p);
     return t;
-    //if(x<=xh&&yh)
+}
+Robot_Tip_3::~Robot_Tip_3()
+{
+    Set_tot_zero();
+}
+Robot_Tip_3::Robot_Tip_3(Robot_Tip_3& b)
+{
+    Muta_Robotul(b.Coordonata_x(),b.Coordonata_y());
+    Modifica_Tip(b.Tip());
+    Item(b.Am_itemul());
 }

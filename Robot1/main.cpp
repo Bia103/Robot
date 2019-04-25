@@ -22,6 +22,16 @@ int main()
     cout<<endl<<"Introduceti inaltimea si respectiv lungimea hartii:";
     int y,z;
     cin>>y>>z;
+    if(y<15)
+       {
+            cout<<"\nValoarea introdusa pentru inaltime a fost prea mica"<<endl;
+            y=15;
+       }
+    if(z<15)
+        {
+            z=15;
+            cout<<"\nValoarea introdusa pentru latime a fost prea mica"<<endl;
+        }
     if(c == 'D')
         s.Incepe_simularea(x,1,y,z);
     else s.Incepe_simularea(x,0,y,z);

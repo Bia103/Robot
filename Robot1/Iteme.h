@@ -22,6 +22,7 @@ class Item1:Iteme
         int Get_Tip();
         int Valid();
         void Set_Valid();
+        ~Item1();
 };
 class Item2
 {
@@ -32,7 +33,7 @@ class Item2
         int Get_Tip();
         int Valid();
         void Set_Valid();
-
+        ~Item2();
 };
 class Item3
 {
@@ -43,6 +44,7 @@ class Item3
         int Get_Tip();
         int Valid();
         void Set_Valid();
+        ~Item3();
 };
 
 #endif // ITEME_H

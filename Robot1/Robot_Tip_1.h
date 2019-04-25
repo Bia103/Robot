@@ -4,13 +4,13 @@
 #include "Harta.h"
 class Robot_Tip_1:public Roboti
 {
-    //robotul ce poate anihila cea mai apropiata capcana
-
+    //Robotul ce poate anihila cea mai apropiata capcana
     public:
         Robot_Tip_1();
         Robot_Tip_1(int);
+        Robot_Tip_1(Robot_Tip_1& );
         Harta Abilitate(const Harta &,int,int);
-
+        ~Robot_Tip_1();
 
 };
 

@@ -12,11 +12,13 @@ class Roboti
         virtual int Coordonata_x();
         virtual int Coordonata_y();
         virtual int Tip();
+        void Set_tot_zero();
         virtual Harta Abilitate(const Harta &,int,int);
         void Muta_Robotul(int,int);
         void Modifica_Tip(int);
         int Am_itemul();
-         void Item(int);
+        void Item(int);
+        virtual ~Roboti();
 };
 
 #endif // ROBOTI_H

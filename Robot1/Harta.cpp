@@ -53,7 +53,6 @@ Harta::Harta()
     }
     n=rand()%3+10;
     int z=rand()%3+10;
-    //cout<<n<<" "<<z<<" "<<endl;
     a[n][z]='S';
     xh=n;
     yh=z;
@@ -79,32 +78,6 @@ Harta::Harta(int b, int c)
         if(xh!=w-1&&yh!=13&&yh!=0)
             a[xh][yh]='C';
     }
-
-   /* for(int i=0;i<q;i++)
-    {
-        int ok1=0,ok2=0;
-        for(int j=0;j<w;j++)
-        {
-            if(a[i][j]=='0')
-                ok1=1;
-            if(a[j][i]=='0')
-                ok2=1;
-        }
-        if(!ok1)
-        {
-            a[i][8]='0';
-        }
-        if(!ok2)
-        {
-            a[8][i]='0';
-            int x=i,y=8;
-            while(a[y][x+1]!='0'&&a[y-1][x+1]!='0'&&a[y-1][x+1]!='0')
-            {
-                a[y][x+1]='0';
-                x++;
-            }
-        }
-    }*/ cout<<"aici";
     n=rand()%60+1;
     for(int i=0;i<n;i++)
     {
@@ -114,14 +87,10 @@ Harta::Harta(int b, int c)
     }
     n=rand()%(q/2)-1+q/2;
     int z=rand()%(w/2)-1+w/2;
-    //cout<<n<<" "<<z<<" "<<endl;
     a[n][z]='S';
     xh=n;
     yh=z;
-
     a[0][0]='0';
-    //this->q=q;
-    //this->w=w;
 }
 Harta::Harta(const Harta &b)
 {
@@ -167,7 +136,6 @@ Harta::Arata_Harta_Cu_Robot(int x,int y)
     for(int i=0;i<=w+1;i++)
         cout<<"X ";
     cout<<endl;
-    //cout<<"harta: x="<<x<<" y="<<y<<endl;
 }
 Harta::Modifica_Harta(int x,int y,char c)
 {

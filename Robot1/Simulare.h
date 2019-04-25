@@ -11,13 +11,12 @@ class Simulare
 
     Roboti *r;
     int scor;
-    //Robot_Tip_1 r1;
-    //Robot_tip_2 r2;
-    //Robot_Tip_3 r3;
-    //Iteme i;
     public:
         Simulare();
+        Simulare(Simulare&);
         void Incepe_simularea(int,int,int,int);
+        Simulare operator =(const Simulare& op2);
+        ~Simulare();
 
 };
 

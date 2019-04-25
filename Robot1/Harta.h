@@ -21,7 +21,6 @@ class Harta
         int W();
         Harta operator =(const Harta& op2);
         ~Harta();
-        //char Pozitia_x_y(int,int);
 };
 
 #endif // HARTA_H

@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1556128054 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
+1556148847 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
 	"Harta.h"
 	<random>
 	<iostream>
 
-1556133920 c:\users\bianca\documents\github\robot\robot1\harta.h
+1556141084 c:\users\bianca\documents\github\robot\robot1\harta.h
 
-1556122329 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
+1556148847 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
 	<iostream>
 	"Harta.h"
 	"Roboti.h"
@@ -16,47 +16,48 @@
 	"Robot_Tip_3.h"
 	"Simulare.h"
 
-1556107140 source:c:\users\bianca\documents\github\robot\robot1\iteme.cpp
+1556145820 source:c:\users\bianca\documents\github\robot\robot1\iteme.cpp
 	"Iteme.h"
 
-1556106194 c:\users\bianca\documents\github\robot\robot1\iteme.h
+1556145820 c:\users\bianca\documents\github\robot\robot1\iteme.h
 	"Roboti.h"
 
-1555951872 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
+1556153994 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
 	"Roboti.h"
+	<iostream>
 
-1555951858 c:\users\bianca\documents\github\robot\robot1\roboti.h
+1556143371 c:\users\bianca\documents\github\robot\robot1\roboti.h
 	"Harta.h"
 
-1556130285 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
+1556150887 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
 	"Robot_Tip_1.h"
 	"Harta.h"
 	<cmath>
 	<iostream>
 
-1555951912 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
+1556150752 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
 	"Roboti.h"
 	"Harta.h"
 
-1556122918 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
+1556153381 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
 	"Robot_tip_2.h"
 	"Harta.h"
 	"Roboti.h"
 	<iostream>
 
-1555951912 c:\users\bianca\documents\github\robot\robot1\robot_tip_2.h
+1556152269 c:\users\bianca\documents\github\robot\robot1\robot_tip_2.h
 	"Roboti.h"
 	"Harta.h"
 
-1556123159 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_3.cpp
+1556150752 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_3.cpp
 	"Robot_Tip_3.h"
 	"Roboti.h"
 	<iostream>
 
-1555951912 c:\users\bianca\documents\github\robot\robot1\robot_tip_3.h
+1556150752 c:\users\bianca\documents\github\robot\robot1\robot_tip_3.h
 	"Roboti.h"
 
-1556133774 source:c:\users\bianca\documents\github\robot\robot1\simulare.cpp
+1556153816 source:c:\users\bianca\documents\github\robot\robot1\simulare.cpp
 	"Simulare.h"
 	"Robot_Tip_1.h"
 	"Robot_tip_2.h"
@@ -64,7 +65,7 @@
 	<iostream>
 	<random>
 
-1556122230 c:\users\bianca\documents\github\robot\robot1\simulare.h
+1556151073 c:\users\bianca\documents\github\robot\robot1\simulare.h
 	"Harta.h"
 	"Roboti.h"
 	"Iteme.h"

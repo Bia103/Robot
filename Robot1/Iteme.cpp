@@ -2,20 +2,21 @@
 
 Iteme::Iteme()
 {
-    tip=0;
+    //tip=0;
 }
 Iteme::Iteme(int x)
 {
-    tip=x;
+//    tip=x;
 }
 int Iteme::Get_Tip()
 {
-    return tip;
+//    return tip;
 }
 int Iteme::Valid()
 {
     return 0;
 }
+
 Item1::Item1()
 {
     tip=1;valid=0;
@@ -36,7 +37,10 @@ void Item1::Set_Valid()
 {
     valid=1;
 }
-
+Item1::~Item1()
+{
+    tip=valid=0;
+}
 
 Item2::Item2()
 {
@@ -58,7 +62,10 @@ void Item2::Set_Valid()
 {
     valid=1;
 }
-
+Item2::~Item2()
+{
+    tip=valid=0;
+}
 
 Item3::Item3()
 {
@@ -79,4 +86,8 @@ int Item3::Valid()
 void Item3::Set_Valid()
 {
     valid=1;
+}
+Item3::~Item3()
+{
+    tip=valid=0;
 }

@@ -8,7 +8,9 @@ class Robot_Tip_3:public Roboti
     public:
         Robot_Tip_3();
         Robot_Tip_3(int);
+        Robot_Tip_3(Robot_Tip_3& );
         Harta Abilitate(const Harta&h,int,int);
+        ~Robot_Tip_3();
 
 };
 

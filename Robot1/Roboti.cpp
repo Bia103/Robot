@@ -1,5 +1,6 @@
 #include "Roboti.h"
-
+#include <iostream>
+using namespace std;
 Roboti::Roboti()
 {
     x=0;
@@ -43,5 +44,13 @@ int Roboti::Am_itemul()
 }
 void Roboti::Item(int x)
 {
-    am_itemul=am_itemul-x;
+    am_itemul=am_itemul+x;
+}
+void Roboti::Set_tot_zero()
+{
+    x=y=tip=am_itemul=0;
+}
+Roboti::~Roboti()
+{
+    x=y=tip=am_itemul=0;
 }
