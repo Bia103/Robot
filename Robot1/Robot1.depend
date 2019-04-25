@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1556194889 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
+1556218072 source:c:\users\bianca\documents\github\robot\robot1\harta.cpp
 	"Harta.h"
 	<random>
 	<iostream>
 
-1556141084 c:\users\bianca\documents\github\robot\robot1\harta.h
+1556218072 c:\users\bianca\documents\github\robot\robot1\harta.h
+	<iostream>
 
 1556148847 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
 	<iostream>
@@ -22,11 +23,11 @@
 1556145820 c:\users\bianca\documents\github\robot\robot1\iteme.h
 	"Roboti.h"
 
-1556153994 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
+1556219433 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
 	"Roboti.h"
 	<iostream>
 
-1556143371 c:\users\bianca\documents\github\robot\robot1\roboti.h
+1556219433 c:\users\bianca\documents\github\robot\robot1\roboti.h
 	"Harta.h"
 
 1556150887 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
