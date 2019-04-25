@@ -41,7 +41,7 @@ Harta Robot_tip_2::Abilitate(const Harta &h,int xh,int yh)
     }
     if(x<xh && y==yh && Am_itemul() && t.Pozitia_x_y(x+1,y)=='C' && (t.Pozitia_x_y(x+2,y)=='0' || t.Pozitia_x_y(x+2,y) == 'S'|| t.Pozitia_x_y(x+2,y) =='I')&& x+2<q)
     {
-        Muta_Robotul(x+2,y);cout<<"???????????????";
+        Muta_Robotul(x+2,y);
         Item(-1);v=0;
     }
     if(x==xh &&y>yh&&Am_itemul() &&t.Pozitia_x_y(x,y-1)=='C'&&(t.Pozitia_x_y(x,y-2)||t.Pozitia_x_y(x,y-2)=='S'|| t.Pozitia_x_y(x,y-2) =='I') && y-2>=0)
@@ -56,7 +56,7 @@ Harta Robot_tip_2::Abilitate(const Harta &h,int xh,int yh)
     }
     if(x > xh && y > yh && Am_itemul() &&t.Pozitia_x_y(x-1,y-1)=='C'&&(t.Pozitia_x_y(x-2,y-2)=='0'||t.Pozitia_x_y(x-2,y-2)=='S'|| t.Pozitia_x_y(x-2,y-2) =='I') && y-2>=0 && x-2>=0)
     {
-        Muta_Robotul(x-2,y-2);//cout<<"Da";
+        Muta_Robotul(x-2,y-2);
         Item(-1);v=0;
     }
     return t;

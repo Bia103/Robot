@@ -82,7 +82,7 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 }
             }
         if(u!=-1)
-        {
+        {   cout<<endl;
             if(x > u && y > p )
             {
                 if(h.Pozitia_x_y(x-1,y-1) != 'C')
@@ -97,12 +97,12 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x,y-1) != 'C')
                         {
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y) != 'C')
                         {
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -135,12 +135,12 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x+1,y) != 'C')
                         {
-                            x++;
+                            x++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x,y+1) != 'C')
                         {
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -173,12 +173,12 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x-1,y) != 'C')
                         {
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x,y+1) != 'C')
                         {
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -212,12 +212,12 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x+1,y) != 'C')
                         {
-                            x++;
+                            x++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x,y-1) != 'C')
                         {
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -251,13 +251,13 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                         if(h.Pozitia_x_y(x+1,y-1) != 'C')
                         {
                             x++;
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y-1) != 'C')
                         {
                             y--;
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -293,13 +293,13 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                         if(h.Pozitia_x_y(x+1,y+1) != 'C')
                         {
                             x++;
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y+1) != 'C')
                         {
                             y++;
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -321,7 +321,7 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 }
             }
             else if(x < u&& y == p )
-            {//cout<<"%%%"<<r->Am_itemul()<<endl;
+            {
                 if(h.Pozitia_x_y(x+1,y) != 'C')
                 {
                     x++;
@@ -329,25 +329,24 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 }
                 else if(r->Tip() == 2 && r->Am_itemul()>0)
                 {
-                    h=r->Abilitate(h,u,p);//cout<<"ce?";
-
+                    h=r->Abilitate(h,u,p);
                     ok=1;
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x+1,y-1) != 'C')
                         {
                             x++;
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x+1,y+1) != 'C')
                         {
                             y++;
-                            x++;
+                            x++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
                     x = r->Coordonata_x();
-                    cout<<"Robotul sare peste o capcana si ajunge la pozitia: "<<x<<" "<<y<<endl;
+                    cout<<endl<<"Robotul sare peste o capcana si ajunge la pozitia: "<<x<<" "<<y<<endl;
                 }
                 else if(h.Pozitia_x_y(x+1,y-1) != 'C')
                 {
@@ -378,13 +377,13 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                         if(h.Pozitia_x_y(x-1,y+1) != 'C')
                         {
                             x--;
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y-1) != 'C')
                         {
                             y--;
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -454,6 +453,7 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
         }
         else
         {
+            cout<<endl;
             if(x > xh && y > yh)
             {
                 if(h.Pozitia_x_y(x-1,y-1) != 'C')
@@ -472,12 +472,12 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x,y-1) != 'C')
                         {
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y) != 'C')
                         {
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     cout<<"Robotul sare peste o capcana si ajunge la pozitia: "<<x<<" "<<y<<endl;
@@ -505,20 +505,21 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 else if(r->Tip() == 2&&r->Am_itemul()>0 )
                 {
                     h=r->Abilitate(h,xh,yh);//
-                    y = r->Coordonata_y();
-                    x = r->Coordonata_x();
+
                     ok=1;
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x+1,y) != 'C')
                         {
-                            x++;
+                            x++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x,y+1) != 'C')
                         {
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
+                    y = r->Coordonata_y();
+                    x = r->Coordonata_x();
                     cout<<"Robotul sare peste o capcana si ajunge la pozitia: "<<x<<" "<<y<<endl;
                 }
                 else if(h.Pozitia_x_y(x+1,y) != 'C')
@@ -544,20 +545,21 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 else if(r->Tip() == 2&&r->Am_itemul()>0 )
                 {
                     h=r->Abilitate(h,xh,yh);
-                    y = r->Coordonata_y();
-                    ok=1;
-                    x = r->Coordonata_x();
+
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x-1,y) != 'C')
                         {
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x,y+1) != 'C')
                         {
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
+                     y = r->Coordonata_y();
+                    ok=1;
+                    x = r->Coordonata_x();
                     cout<<"Robotul sare peste o capcana si ajunge la pozitia: "<<x<<" "<<y<<endl;
                 }
                 else if(h.Pozitia_x_y(x-1,y) != 'C')
@@ -583,15 +585,20 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 {
                     h=r->Abilitate(h,xh,yh);
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
+                       {
+
                         if(h.Pozitia_x_y(x+1,y) != 'C')
                         {
                             x++;
                             ok=1;
+                            r->Muta_Robotul(x,y);
                         }
                         else if(h.Pozitia_x_y(x,y-1) != 'C')
                         {
                             y--;
                             ok=1;
+                            r->Muta_Robotul(x,y);
+                        }
                         }
                     y = r->Coordonata_y();
                     ok=1;
@@ -625,13 +632,13 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                         if(h.Pozitia_x_y(x+1,y-1) != 'C')
                         {
                             x++;
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y-1) != 'C')
                         {
                             y--;
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -666,13 +673,13 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                         if(h.Pozitia_x_y(x+1,y+1) != 'C')
                         {
                             x++;
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y+1) != 'C')
                         {
                             y++;
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();
@@ -703,21 +710,21 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 else if(r->Tip() == 2&&r->Am_itemul()>0)
                 {
                     h=r->Abilitate(h,xh,yh);
-                    y = r->Coordonata_y();
-                    x = r->Coordonata_x();
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x+1,y-1) != 'C')
-                        {
+                        {//
                             x++;
-                            y--;
+                            y--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x+1,y+1) != 'C')
                         {
                             y++;
-                            x++;
+                            x++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
+                    y = r->Coordonata_y();
+                    x = r->Coordonata_x();
                     ok=1;
                     cout<<"Robotul sare peste o capcana si ajunge la pozitia: "<<x<<" "<<y<<endl;
                 }
@@ -744,18 +751,19 @@ void Simulare::Incepe_simularea(int tip,int e,int b,int c)
                 else if(r->Tip() == 2 && r->Am_itemul()>0)
                 {
                     h=r->Abilitate(h,u,p);
+
                     ok=1;
                     if(y == r->Coordonata_y()&&x==r->Coordonata_x())
                         if(h.Pozitia_x_y(x-1,y+1) != 'C')
                         {
                             x--;
-                            y++;
+                            y++;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                         else if(h.Pozitia_x_y(x-1,y-1) != 'C')
                         {
                             y--;
-                            x--;
+                            x--;r->Muta_Robotul(x,y);
                             ok=1;
                         }
                     y = r->Coordonata_y();

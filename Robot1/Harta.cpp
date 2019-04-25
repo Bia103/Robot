@@ -67,15 +67,15 @@ Harta::Harta(int b, int c)
     a=new char*[q];
     for(int i = 0; i < q; ++i)
         a[i] = new char[w];
-    int n=rand()%120;
+    int n=rand()%200;
     for(int i=0;i<q;i++)
         for(int j=0;j<w;j++)
             a[i][j]='0';
-    for(int i=0;i<n;i++)
+    for(int i=0; i<n ; i++)
     {
-        int xh=rand()%q;
-        int yh=rand()%w;
-        if(xh!=w-1&&yh!=13&&yh!=0)
+        int xh = rand()%q;
+        int yh = rand()%w;
+        if(xh != w-1 && yh != 13 && yh !=0 )
             a[xh][yh]='C';
     }
     n=rand()%60+1;
