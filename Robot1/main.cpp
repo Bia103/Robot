@@ -24,13 +24,13 @@ int main()
     cin>>y>>z;
     if(y<15)
        {
-            cout<<"\nValoarea introdusa pentru inaltime a fost prea mica"<<endl;
+            cout<<"\nValoarea introdusa pentru inaltime a fost prea mica, asa ca a fost schimbata cu cea minima (15)."<<endl;
             y=15;
        }
     if(z<15)
         {
             z=15;
-            cout<<"\nValoarea introdusa pentru latime a fost prea mica"<<endl;
+            cout<<"\nValoarea introdusa pentru latime a fost prea mica, asa ca a fost schimbata cu cea minima (15)."<<endl;
         }
     if(c == 'D')
         s.Incepe_simularea(x,1,y,z);

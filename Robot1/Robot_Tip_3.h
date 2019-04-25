@@ -4,7 +4,7 @@
 
 class Robot_Tip_3:public Roboti
 {
-    //robotul ce se teleporteaza cat mai aproape de final
+    //robotul ce se teleporteaza cat mai aproape de final (S)
     public:
         Robot_Tip_3();
         Robot_Tip_3(int);

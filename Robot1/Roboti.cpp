@@ -13,6 +13,13 @@ Roboti::Roboti(int tip)     //constructorul fara parametri
     y=0;
     this->tip=tip;          //tipul este initializat cu cel dorit de utilizator
 }
+Roboti :: Roboti(Roboti& b)
+{
+    am_itemul = b.am_itemul;
+    x = b.x;
+    y = b.y;
+    tip = tip;
+}
 int Roboti::Coordonata_x()  //metoda ce intoarce pozitia x pe care se afla robotul
 {
     return x;               // returnarea lui x

@@ -15,6 +15,7 @@ class Roboti                                    // clasa de baza a tuturor robot
     public:
         Roboti();                               // constructorul fara parametrii
         Roboti(int);                            // constructorul cu parametru
+        Roboti(Roboti&);                         // constructorul de copiere
         int Coordonata_x();                     // returneaza coordonata x
         int Coordonata_y();                     // returneaza coordonata y
         int Tip();                              // intoarce tipul robotului

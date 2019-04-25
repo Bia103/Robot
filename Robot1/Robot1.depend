@@ -7,7 +7,7 @@
 1556218072 c:\users\bianca\documents\github\robot\robot1\harta.h
 	<iostream>
 
-1556148847 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
+1556227819 source:c:\users\bianca\documents\github\robot\robot1\main.cpp
 	<iostream>
 	"Harta.h"
 	"Roboti.h"
@@ -17,30 +17,30 @@
 	"Robot_Tip_3.h"
 	"Simulare.h"
 
-1556145820 source:c:\users\bianca\documents\github\robot\robot1\iteme.cpp
+1556226899 source:c:\users\bianca\documents\github\robot\robot1\iteme.cpp
 	"Iteme.h"
 
-1556145820 c:\users\bianca\documents\github\robot\robot1\iteme.h
+1556227818 c:\users\bianca\documents\github\robot\robot1\iteme.h
 	"Roboti.h"
 
-1556219433 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
+1556219844 source:c:\users\bianca\documents\github\robot\robot1\roboti.cpp
 	"Roboti.h"
 	<iostream>
 
-1556219433 c:\users\bianca\documents\github\robot\robot1\roboti.h
+1556219857 c:\users\bianca\documents\github\robot\robot1\roboti.h
 	"Harta.h"
 
-1556150887 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
+1556221477 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_1.cpp
 	"Robot_Tip_1.h"
 	"Harta.h"
 	<cmath>
 	<iostream>
 
-1556150752 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
+1556219844 c:\users\bianca\documents\github\robot\robot1\robot_tip_1.h
 	"Roboti.h"
 	"Harta.h"
 
-1556194464 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
+1556227818 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_2.cpp
 	"Robot_tip_2.h"
 	"Harta.h"
 	"Roboti.h"
@@ -50,15 +50,15 @@
 	"Roboti.h"
 	"Harta.h"
 
-1556150752 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_3.cpp
+1556227235 source:c:\users\bianca\documents\github\robot\robot1\robot_tip_3.cpp
 	"Robot_Tip_3.h"
 	"Roboti.h"
 	<iostream>
 
-1556150752 c:\users\bianca\documents\github\robot\robot1\robot_tip_3.h
+1556224541 c:\users\bianca\documents\github\robot\robot1\robot_tip_3.h
 	"Roboti.h"
 
-1556197522 source:c:\users\bianca\documents\github\robot\robot1\simulare.cpp
+1556227235 source:c:\users\bianca\documents\github\robot\robot1\simulare.cpp
 	"Simulare.h"
 	"Robot_Tip_1.h"
 	"Robot_tip_2.h"
@@ -66,7 +66,7 @@
 	<iostream>
 	<random>
 
-1556151073 c:\users\bianca\documents\github\robot\robot1\simulare.h
+1556227819 c:\users\bianca\documents\github\robot\robot1\simulare.h
 	"Harta.h"
 	"Roboti.h"
 	"Iteme.h"

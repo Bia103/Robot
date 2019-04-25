@@ -91,3 +91,18 @@ Item3::~Item3()
 {
     tip=valid=0;
 }
+Item3 :: Item3(Item3 &b)
+{
+    valid = b.valid;
+    tip = b.tip;
+}
+Item2 :: Item2(Item2 &b)
+{
+    valid = b.valid;
+    tip = b.tip;
+}
+Item1 :: Item1(Item1 &b)
+{
+    valid = b.valid;
+    tip = b.tip;
+}
